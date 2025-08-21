@@ -2,7 +2,8 @@ from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 # Your Telegram bot token (kept exactly as you provided)
-TELEGRAM_BOT_TOKEN = "8013042127:AAHU0KxZWi7LY27slPyz6hsfeaWyvhOWw6I"
+import os
+TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
 # FAQ dictionary
 faq = {
